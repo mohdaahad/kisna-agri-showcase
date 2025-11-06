@@ -2,16 +2,34 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Tag } from "lucide-react";
 
 interface ProductCardProps {
   name: string;
   category: string;
   image: string;
-  brands: string;
+  brand: string;
+  mrp: number;
+  offerPrice?: number;
+  offerPercentage?: number;
+  uom: string;
   index: number;
 }
 
-const ProductCard = ({ name, category, image, brands, index }: ProductCardProps) => {
+const ProductCard = ({ 
+  name, 
+  category, 
+  image, 
+  brand, 
+  mrp, 
+  offerPrice, 
+  offerPercentage,
+  uom,
+  index 
+}: ProductCardProps) => {
+  const finalPrice = offerPrice || mrp;
+  const hasOffer = offerPrice && offerPrice < mrp;
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -19,24 +37,46 @@ const ProductCard = ({ name, category, image, brands, index }: ProductCardProps)
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
     >
-      <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
         <div className="aspect-square bg-muted relative overflow-hidden">
           <img
             src={image}
-            alt={name}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            alt={`${name} - ${brand}`}
+            className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
           />
-          <Badge className="absolute top-2 right-2 bg-secondary text-secondary-foreground">
+          <Badge className="absolute top-3 right-3 bg-secondary text-secondary-foreground font-semibold">
             {category}
           </Badge>
+          {hasOffer && offerPercentage && (
+            <Badge className="absolute top-3 left-3 bg-destructive text-destructive-foreground font-bold">
+              {offerPercentage}% OFF
+            </Badge>
+          )}
         </div>
-        <CardContent className="p-4">
-          <h3 className="font-semibold text-lg mb-2 text-foreground">{name}</h3>
-          <p className="text-sm text-muted-foreground">Available Brands: {brands}</p>
+        <CardContent className="p-4 flex-1 flex flex-col">
+          <div className="flex items-start justify-between gap-2 mb-2">
+            <h3 className="font-bold text-lg text-foreground leading-tight">{name}</h3>
+            <Badge variant="outline" className="flex items-center gap-1 shrink-0">
+              <Tag className="w-3 h-3" />
+              {brand}
+            </Badge>
+          </div>
+          
+          <div className="mt-auto">
+            <div className="flex items-baseline gap-2 mb-1">
+              <span className="text-2xl font-bold text-primary">₹{finalPrice}</span>
+              {hasOffer && (
+                <span className="text-sm text-muted-foreground line-through">₹{mrp}</span>
+              )}
+            </div>
+            <p className="text-sm text-muted-foreground">{uom}</p>
+          </div>
         </CardContent>
         <CardFooter className="p-4 pt-0">
-          <Button variant="outline" className="w-full" asChild>
-            <a href="https://wa.me/918532948698">Enquiry</a>
+          <Button variant="default" className="w-full" asChild>
+            <a href={`https://wa.me/918532948698?text=Hi, I'm interested in ${name} (${brand})`}>
+              Enquiry on WhatsApp
+            </a>
           </Button>
         </CardFooter>
       </Card>

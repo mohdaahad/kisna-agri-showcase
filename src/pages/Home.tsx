@@ -33,40 +33,70 @@ const Home = () => {
 
   const featuredProducts = [
     {
-      name: "Zodia",
-      category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
-    },
-    {
       name: "Shooter-50",
       category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
+      image: "/products/shooter-50.jpg",
+      brand: "UPL",
+      mrp: 450,
+      offerPrice: 380,
+      offerPercentage: 15,
+      uom: "500ml",
+      index: 0,
     },
     {
-      name: "ROTO-S",
-      category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
+      name: "Zodia",
+      category: "Pesticides",
+      image: "/products/zodia.jpg",
+      brand: "Syngenta",
+      mrp: 1200,
+      offerPrice: 1020,
+      offerPercentage: 15,
+      uom: "1 Liter",
+      index: 1,
+    },
+    {
+      name: "Hungama Gold",
+      category: "Pesticides",
+      image: "/products/hungama-gold.jpg",
+      brand: "Iffco",
+      mrp: 1150,
+      offerPrice: 1035,
+      offerPercentage: 10,
+      uom: "1 Liter",
+      index: 2,
     },
     {
       name: "Alpha",
-      category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
-    },
-    {
-      name: "Hadar",
       category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
+      image: "/products/alpha.jpg",
+      brand: "Coromandel",
+      mrp: 890,
+      offerPrice: 800,
+      offerPercentage: 10,
+      uom: "1 Liter",
+      index: 3,
     },
     {
-      name: "Nor-Ko-T3",
-      category: "Seeds",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
-      brands: "JU, UPL, Bayer",
+      name: "Yodha",
+      category: "Pesticides",
+      image: "/products/yodha.jpg",
+      brand: "Anshul",
+      mrp: 550,
+      offerPrice: 495,
+      offerPercentage: 10,
+      uom: "500ml",
+      index: 4,
+    },
+    {
+      name: "Sun Quit",
+      category: "Pesticides",
+      image: "/products/sun-quit.jpg",
+      brand: "PI Industries",
+      mrp: 340,
+      offerPrice: 290,
+      offerPercentage: 15,
+      uom: "250ml",
+      index: 5,
     },
   ];
 
@@ -141,8 +171,8 @@ const Home = () => {
             </p>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredProducts.map((product, index) => (
-              <ProductCard key={product.name} {...product} index={index} />
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </div>
