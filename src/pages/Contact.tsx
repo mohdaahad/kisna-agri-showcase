@@ -44,25 +44,25 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (234) 567-890",
-      link: "tel:+1234567890",
+      content: "+91 85329 48698",
+      link: "tel:+918532948698",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
       content: "Chat with us",
-      link: "https://wa.me/1234567890",
+      link: "https://wa.me/918532948698",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@kisnabhagwanji.com",
-      link: "mailto:info@kisnabhagwanji.com",
+      content: "info@kisanbagwani.com",
+      link: "mailto:info@kisanbagwani.com",
     },
     {
       icon: MapPin,
       title: "Address",
-      content: "Main Street, Agricultural District",
+      content: "Islamnagar, Saharanpur",
       link: "#map",
     },
     {
@@ -208,13 +208,13 @@ const Contact = () => {
             </div>
             <div className="mt-6 space-y-3">
               <Button variant="outline" size="lg" className="w-full" asChild>
-                <a href="https://wa.me/1234567890">
+                <a href="https://wa.me/918532948698">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   WhatsApp Us
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="w-full" asChild>
-                <a href="tel:+1234567890">
+                <a href="tel:+918532948698">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
                 </a>

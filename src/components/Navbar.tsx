@@ -26,7 +26,7 @@ const Navbar = () => {
               <span className="text-primary-foreground font-bold text-xl">KB</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">Kisna Bhagwanji Center</h1>
+              <h1 className="text-xl font-bold text-foreground">Kisan Bagwani Center</h1>
               <p className="text-xs text-muted-foreground">Since 1990</p>
             </div>
           </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button size="sm" className="ml-4" asChild>
-              <a href="tel:+1234567890">
+              <a href="tel:+918532948698">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
             ))}
             <div className="px-4 pt-3">
               <Button className="w-full" asChild>
-                <a href="tel:+1234567890">
+                <a href="tel:+918532948698">
                   <Phone className="mr-2 h-4 w-4" />
                   Call Now
                 </a>

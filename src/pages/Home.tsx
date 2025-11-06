@@ -33,40 +33,40 @@ const Home = () => {
 
   const featuredProducts = [
     {
-      name: "Crop Protection Spray",
+      name: "Zodia",
       category: "Pesticides",
       image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
       brands: "JU, UPL, Bayer",
     },
     {
-      name: "Organic Fertilizer",
-      category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=400&h=400&fit=crop",
-      brands: "JU, UPL",
-    },
-    {
-      name: "Hybrid Wheat Seeds",
-      category: "Seeds",
-      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=400&fit=crop",
-      brands: "Bayer, UPL",
-    },
-    {
-      name: "NPK Complex",
-      category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-      brands: "JU, Bayer",
-    },
-    {
-      name: "Hand Cultivator",
-      category: "Farm Tools",
-      image: "https://images.unsplash.com/photo-1593613581390-4b9e92873ed2?w=400&h=400&fit=crop",
-      brands: "Local Brands",
-    },
-    {
-      name: "Plant Growth Regulator",
+      name: "Shooter-50",
       category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&h=400&fit=crop",
-      brands: "UPL, Bayer",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "ROTO-S",
+      category: "Fertilizers",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Alpha",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Hadar",
+      category: "Fertilizers",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Nor-Ko-T3",
+      category: "Seeds",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
   ];
 
@@ -85,7 +85,7 @@ const Home = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Kisna Bhagwanji Center
+              Kisan Bagwani Center
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               Trusted Agricultural & Pesticide Products Since 1990
@@ -159,7 +159,7 @@ const Home = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">About Us</h2>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-            For over three decades, Kisna Bhagwanji Center has been serving the farming community
+            For over three decades, Kisan Bagwani Center has been serving the farming community
             with dedication and trust. As a family-run business, we understand the importance of
             quality agricultural products and personalized service for every farmer's success.
           </p>
@@ -174,14 +174,14 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
             <a
-              href="tel:+1234567890"
+              href="tel:+918532948698"
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium">+1 (234) 567-890</span>
+              <span className="font-medium">+91 85329 48698</span>
             </a>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/918532948698"
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <MessageCircle className="h-5 w-5" />
@@ -189,7 +189,7 @@ const Home = () => {
             </a>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
-              <span className="font-medium">Main Street, Agricultural District</span>
+              <span className="font-medium">Islamnagar, Saharanpur</span>
             </div>
           </div>
         </div>

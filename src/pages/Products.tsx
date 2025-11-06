@@ -12,76 +12,88 @@ const Products = () => {
 
   const allProducts = [
     {
-      name: "Crop Protection Spray",
+      name: "Zodia",
       category: "Pesticides",
       image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
       brands: "JU, UPL, Bayer",
     },
     {
-      name: "Organic Fertilizer",
-      category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=400&h=400&fit=crop",
-      brands: "JU, UPL",
+      name: "Shooter-50",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Hybrid Wheat Seeds",
+      name: "ROTO-S",
+      category: "Fertilizers",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Alpha",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Hadar",
+      category: "Fertilizers",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Nor-Ko-T3",
       category: "Seeds",
-      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=400&fit=crop",
-      brands: "Bayer, UPL",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "NPK Complex",
+      name: "Hungama Gold",
       category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-      brands: "JU, Bayer",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Hand Cultivator",
+      name: "Cyper-25",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Sun Quit",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
+    },
+    {
+      name: "Minister",
       category: "Farm Tools",
-      image: "https://images.unsplash.com/photo-1593613581390-4b9e92873ed2?w=400&h=400&fit=crop",
-      brands: "Local Brands",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Plant Growth Regulator",
-      category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&h=400&fit=crop",
-      brands: "UPL, Bayer",
-    },
-    {
-      name: "Insect Control Solution",
-      category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400&h=400&fit=crop",
-      brands: "JU, Bayer",
-    },
-    {
-      name: "Bio Fertilizer",
+      name: "Heera",
       category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&h=400&fit=crop",
-      brands: "UPL, Local",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Vegetable Seeds Pack",
+      name: "Mantra",
       category: "Seeds",
-      image: "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=400&h=400&fit=crop",
-      brands: "Bayer, JU",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Garden Hoe",
-      category: "Farm Tools",
-      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-      brands: "Local Brands",
-    },
-    {
-      name: "Weed Control Herbicide",
+      name: "Yodha",
       category: "Pesticides",
-      image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=400&h=400&fit=crop",
-      brands: "UPL, Bayer",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
     {
-      name: "Micronutrient Mix",
-      category: "Fertilizers",
-      image: "https://images.unsplash.com/photo-1591857177131-47b35a6e4d5c?w=400&h=400&fit=crop",
-      brands: "JU, UPL",
+      name: "Fatafat",
+      category: "Pesticides",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=400&fit=crop",
+      brands: "JU, UPL, Bayer",
     },
   ];
 
@@ -141,7 +153,7 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto">
             <strong>Legal Disclaimer:</strong> Brand names shown (JU, UPL, Bayer) are for
-            reference only. Kisna Bhagwanji Center is an independent retailer and not directly
+            reference only. Kisan Bagwani Center is an independent retailer and not directly
             affiliated with these manufacturers. All trademarks belong to their respective owners.
           </p>
         </div>

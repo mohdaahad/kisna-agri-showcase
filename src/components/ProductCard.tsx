@@ -36,7 +36,7 @@ const ProductCard = ({ name, category, image, brands, index }: ProductCardProps)
         </CardContent>
         <CardFooter className="p-4 pt-0">
           <Button variant="outline" className="w-full" asChild>
-            <a href="https://wa.me/1234567890">Enquiry</a>
+            <a href="https://wa.me/918532948698">Enquiry</a>
           </Button>
         </CardFooter>
       </Card>

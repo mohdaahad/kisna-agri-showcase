@@ -60,7 +60,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Kisna Bhagwanji Center was founded in 1990 with a simple mission: to provide
+                Kisan Bagwani Center was founded in 1990 with a simple mission: to provide
                 farmers with access to quality agricultural products and expert guidance. What
                 started as a small family shop has grown into a trusted name in the agricultural
                 community.
