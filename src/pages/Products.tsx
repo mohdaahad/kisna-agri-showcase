@@ -254,7 +254,7 @@ const Products = () => {
       {/* Hero Section with Farming Background */}
       <section 
         className="relative py-24 bg-cover bg-center"
-        style={{ backgroundImage: "url('/farming-hero.jpg')" }}
+        style={{ backgroundImage: "url('/hero-products.jpg')" }}
       >
         <div className="absolute inset-0 bg-foreground/60" />
         <div className="container mx-auto px-4 text-center relative z-10">

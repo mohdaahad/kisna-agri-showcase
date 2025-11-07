@@ -106,7 +106,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-light via-background to-background overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/hero-home.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 py-24 relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -204,14 +204,14 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
             <a
-              href="tel:+918532948698"
+              href="tel:+918532948658"
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium">+91 85329 48698</span>
+              <span className="font-medium">+91 85329 48658</span>
             </a>
             <a
-              href="https://wa.me/918532948698"
+              href="https://wa.me/918532948658"
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <MessageCircle className="h-5 w-5" />

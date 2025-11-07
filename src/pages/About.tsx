@@ -32,8 +32,9 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-light to-background py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-light to-background py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/hero-about.jpg')] bg-cover bg-center opacity-20"></div>
+        <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

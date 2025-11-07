@@ -74,7 +74,7 @@ const ProductCard = ({
         </CardContent>
         <CardFooter className="p-4 pt-0">
           <Button variant="default" className="w-full" asChild>
-            <a href={`https://wa.me/918532948698?text=Hi, I'm interested in ${name} (${brand})`}>
+            <a href={`https://wa.me/918532948658?text=Hi, I'm interested in ${name} (${brand})`}>
               Enquiry on WhatsApp
             </a>
           </Button>

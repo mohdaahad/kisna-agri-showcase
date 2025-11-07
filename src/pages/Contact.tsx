@@ -44,14 +44,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+91 85329 48698",
-      link: "tel:+918532948698",
+      content: "+91 85329 48658",
+      link: "tel:+918532948658",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
       content: "Chat with us",
-      link: "https://wa.me/918532948698",
+      link: "https://wa.me/918532948658",
     },
     {
       icon: Mail,
@@ -78,8 +78,9 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-light to-background py-16">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-light to-background py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/hero-contact.jpg')] bg-cover bg-center opacity-20"></div>
+        <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -208,13 +209,13 @@ const Contact = () => {
             </div>
             <div className="mt-6 space-y-3">
               <Button variant="outline" size="lg" className="w-full" asChild>
-                <a href="https://wa.me/918532948698">
+                <a href="https://wa.me/918532948658">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   WhatsApp Us
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="w-full" asChild>
-                <a href="tel:+918532948698">
+                <a href="tel:+918532948658">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
                 </a>
