@@ -33,6 +33,7 @@ const Home = () => {
 
   const featuredProducts = [
     {
+      id: 2,
       name: "Shooter-50",
       category: "Pesticides",
       image: "/products/shooter-50.jpg",
@@ -44,6 +45,7 @@ const Home = () => {
       index: 0,
     },
     {
+      id: 1,
       name: "Zodia",
       category: "Pesticides",
       image: "/products/zodia.jpg",
@@ -55,6 +57,7 @@ const Home = () => {
       index: 1,
     },
     {
+      id: 7,
       name: "Hungama Gold",
       category: "Pesticides",
       image: "/products/hungama-gold.jpg",
@@ -66,6 +69,7 @@ const Home = () => {
       index: 2,
     },
     {
+      id: 4,
       name: "Alpha",
       category: "Fertilizers",
       image: "/products/alpha.jpg",
@@ -77,6 +81,7 @@ const Home = () => {
       index: 3,
     },
     {
+      id: 13,
       name: "Yodha",
       category: "Pesticides",
       image: "/products/yodha.jpg",
@@ -88,6 +93,7 @@ const Home = () => {
       index: 4,
     },
     {
+      id: 9,
       name: "Sun Quit",
       category: "Pesticides",
       image: "/products/sun-quit.jpg",
