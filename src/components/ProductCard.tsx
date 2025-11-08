@@ -41,7 +41,7 @@ const ProductCard = ({
       transition={{ duration: 0.4, delay: index * 0.05 }}
     >
       <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-        <Link to={`/products/${id}`}>
+        {/* <Link to={`/products/${id}`}> */}
           <div className="aspect-square bg-muted relative overflow-hidden cursor-pointer">
             <img
               src={image}
@@ -57,12 +57,12 @@ const ProductCard = ({
               </Badge>
             )}
           </div>
-        </Link>
+        {/* </Link> */} 
         <CardContent className="p-4 flex-1 flex flex-col">
           <div className="flex items-start justify-between gap-2 mb-2">
-            <Link to={`/products/${id}`}>
+            {/* <Link to={`/products/${id}`}> */}
               <h3 className="font-bold text-lg text-foreground leading-tight hover:text-primary transition-colors cursor-pointer">{name}</h3>
-            </Link>
+            {/* </Link> */}
             <Badge variant="outline" className="flex items-center gap-1 shrink-0">
               <Tag className="w-3 h-3" />
               {brand}

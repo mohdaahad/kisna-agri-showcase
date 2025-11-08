@@ -45,16 +45,28 @@ const Home = () => {
       index: 0,
     },
     {
-      id: 2,
-      name: "JU Ultra",
+      id: 39,
+      name: "AADAT (Patented Product)",
       category: "Insecticides",
-      image: "/products/ju-ultra.png",
-      brand: "JU Agri Sciences",
-      mrp: 1350,
-      offerPrice: 1215,
+      image: "/products/aadat__patented_product_.png",
+      brand: "Parijat Agrochemicals",
+      mrp: 1200,
+      offerPrice: 1080,
       offerPercentage: 10,
-      uom: "1 Liter",
+      uom: "500ml",
       index: 1,
+    },
+    {
+      id: 141,
+      name: "Abacin",
+      category: "Insecticides",
+      image: "/products/abacin.jpg",
+      brand: "Crystal Crop Protection",
+      mrp: 650,
+      offerPrice: 585,
+      offerPercentage: 10,
+      uom: "500ml",
+      index: 2,
     },
     {
       id: 13,
@@ -66,7 +78,29 @@ const Home = () => {
       offerPrice: 1125,
       offerPercentage: 10,
       uom: "1 Liter",
-      index: 2,
+      index: 3,
+    },
+    {
+      id: 44,
+      name: "APNAZEB M-45",
+      category: "Fungicides",
+      image: "/products/apnazeb_m_45.png",
+      brand: "Parijat Agrochemicals",
+      mrp: 550,
+      uom: "1 Kg",
+      index: 4,
+    },
+    {
+      id: 195,
+      name: "Bavistin",
+      category: "Fungicides",
+      image: "/products/bavistin.jpg",
+      brand: "Crystal Crop Protection",
+      mrp: 550,
+      offerPrice: 495,
+      offerPercentage: 10,
+      uom: "1 Liter",
+      index: 5,
     },
     {
       id: 36,
@@ -76,31 +110,29 @@ const Home = () => {
       brand: "JU Agri Sciences",
       mrp: 720,
       uom: "1 Liter",
-      index: 3,
+      index: 6,
     },
     {
-      id: 18,
-      name: "TRILOK",
-      category: "Insecticides",
-      image: "/products/trilok.png",
-      brand: "JU Agri Sciences",
-      mrp: 1180,
-      offerPrice: 1062,
+      id: 107,
+      name: "PARI ROOT PLUS",
+      category: "Fertilizers",
+      image: "/products/pari_root_plus.png",
+      brand: "Parijat Agrochemicals",
+      mrp: 580,
+      offerPrice: 522,
       offerPercentage: 10,
       uom: "1 Liter",
-      index: 4,
+      index: 7,
     },
     {
-      id: 33,
-      name: "SHOOTER-50",
-      category: "Insecticides",
-      image: "/products/shooter-50.png",
-      brand: "JU Agri Sciences",
-      mrp: 650,
-      offerPrice: 585,
-      offerPercentage: 10,
-      uom: "500ml",
-      index: 5,
+      id: 212,
+      name: "Crystorhiza",
+      category: "Fertilizers",
+      image: "/products/crystorhiza.jpg",
+      brand: "Crystal Crop Protection",
+      mrp: 580,
+      uom: "1 Liter",
+      index: 8,
     },
   ];
 
@@ -174,9 +206,9 @@ const Home = () => {
               Top quality products from trusted brands
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
             {featuredProducts.map((product) => (
-              <ProductCard key={product.name} {...product} />
+              <ProductCard key={product.id} {...product} />
             ))}
           </div>
         </div>
