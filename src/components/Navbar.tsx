@@ -22,12 +22,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">KB</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Kisan Bagwani Center Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-foreground">Kisan Bagwani Center</h1>
-              <p className="text-xs text-muted-foreground">Since 1990</p>
+              <p className="text-xs text-muted-foreground">Since 2002</p>
             </div>
           </Link>
 
@@ -37,11 +39,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  isActive(link.path)
+                className={`px-4 py-2 rounded-lg transition-colors ${isActive(link.path)
                     ? "bg-accent text-accent-foreground font-medium"
                     : "text-foreground hover:bg-muted"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -72,11 +73,10 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded-lg transition-colors ${
-                  isActive(link.path)
+                className={`block px-4 py-3 rounded-lg transition-colors ${isActive(link.path)
                     ? "bg-accent text-accent-foreground font-medium"
                     : "text-foreground hover:bg-muted"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>

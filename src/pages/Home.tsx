@@ -13,21 +13,25 @@ const Home = () => {
       icon: Sprout,
       title: "Pesticides",
       description: "Quality pest control solutions for healthy crops",
+      category: "Insecticides", // Default to Insecticides for Pesticides
     },
     {
       icon: Package,
       title: "Fertilizers",
       description: "Nutrient-rich fertilizers for optimal growth",
+      category: "Fertilizers",
     },
     {
       icon: Wheat,
       title: "Seeds",
       description: "Premium quality seeds for better yields",
+      category: "Seeds",
     },
     {
       icon: Wrench,
       title: "Farm Tools",
       description: "Durable equipment for efficient farming",
+      category: "Agricultural Equipment",
     },
   ];
 
@@ -154,7 +158,7 @@ const Home = () => {
               Kisan Bagwani Center
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Trusted Agricultural & Pesticide Products Since 1990
+              Trusted Agricultural & Pesticide Products Since 2002
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

@@ -1,8 +1,8 @@
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted border-t border-border mt-20">
+    <footer className="bg-muted border-t border-border">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
@@ -19,16 +19,7 @@ const Footer = () => {
               <MessageCircle className="h-5 w-5" />
             </a>
             <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
+              href="https://www.instagram.com/kisan_bagwani_center/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"

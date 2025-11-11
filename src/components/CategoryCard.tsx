@@ -9,9 +9,12 @@ interface CategoryCardProps {
   title: string;
   description: string;
   index: number;
+  category?: string;
 }
 
-const CategoryCard = ({ icon: Icon, title, description, index }: CategoryCardProps) => {
+const CategoryCard = ({ icon: Icon, title, description, index, category }: CategoryCardProps) => {
+  const productsLink = category ? `/products?category=${encodeURIComponent(category)}` : "/products";
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -27,7 +30,7 @@ const CategoryCard = ({ icon: Icon, title, description, index }: CategoryCardPro
           <h3 className="text-xl font-semibold mb-2 text-foreground">{title}</h3>
           <p className="text-muted-foreground mb-4">{description}</p>
           <Button variant="outline" asChild>
-            <Link to="/products">View Products</Link>
+            <Link to={productsLink}>View Products</Link>
           </Button>
         </CardContent>
       </Card>

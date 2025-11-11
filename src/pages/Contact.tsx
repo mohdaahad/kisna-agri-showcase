@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.phone || !formData.message) {
       toast({
@@ -56,8 +56,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "info@kisanbagwani.com",
-      link: "mailto:info@kisanbagwani.com",
+      content: "maazrahi614@gmail.com",
+      link: "mailto:maazrahi614@gmail.com",
     },
     {
       icon: MapPin,
@@ -197,7 +197,7 @@ const Contact = () => {
             <h2 className="text-3xl font-bold mb-6 text-foreground">Visit Our Store</h2>
             <div className="rounded-2xl overflow-hidden shadow-lg h-[400px] bg-muted flex items-center justify-center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648718453!2d-73.98823492346652!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1704067200000!5m2!1sen!2sus"
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=R9RX%2BHRJ%2C%20Islam%20Nagar%2C%20Uttar%20Pradesh%20247451&t=&z=18&ie=UTF8&iwloc=B&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
